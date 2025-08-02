@@ -8,8 +8,11 @@ import PlaylistsPage from '../pages/PlaylistsPage';
 import PlaylistDetailPage from '../pages/PlaylistDetailPage';
 
 export const AppRouter = () => {
+
+  const repoName = '/Catalogo';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={repoName}>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
